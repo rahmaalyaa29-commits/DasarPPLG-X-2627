@@ -1,0 +1,154 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMbk8d6US/bkne6n982I9XZ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/rahmaalyaa29-commits/DasarPPLG-X-2627/blob/main/Tugas%202%20Alyaa%20Rahma%20Thalita%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Tugas 2 Praktik Input Data\n",
+        "\n",
+        "Nama Kelompok: Nexacode\n",
+        "\n",
+        "1. Raisya Putri Darmawan\n",
+        "2. Nur Mawadah\n",
+        "3. Syafira meidina Syarif\n",
+        "4. Alyaa Rahma Thalita\n",
+        "5. Teuku Muhammad Fadhil\n",
+        "6. Davi Ramadhan Pratama\n",
+        "7. Aghnan Aiszar Kamaludin"
+      ],
+      "metadata": {
+        "id": "0aGueDJD57rV"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!g++ --version"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LnAmCjj65yB5",
+        "outputId": "66aaaa52-a85d-4368-9d92-bfd47ec73d3f"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\n",
+            "Copyright (C) 2023 Free Software Foundation, Inc.\n",
+            "This is free software; see the source for copying conditions.  There is NO\n",
+            "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hebgs0oK3JsR",
+        "outputId": "2421a5c5-13e7-4a6d-e8e9-e0c59b0a8820"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Writing input_data.cpp\n"
+          ]
+        }
+      ],
+      "source": [
+        "%%writefile input_data.cpp\n",
+        "#include <iostream>\n",
+        "#include <string>\n",
+        "using namespace std;\n",
+        "\n",
+        "int main (){\n",
+        "string namaSiswa;\n",
+        "int umur;\n",
+        "\n",
+        "count << \" Masukkan Nama (1 kata):\";\n",
+        "cin >> namaSiswa;\n",
+        "\n",
+        "count << \"Masukkan Umur Anda :\";\n",
+        "cin >> umur;\n",
+        "\n",
+        "cout << \"\\nHalo \" << namaSiswa << \", ternyata umur kamu \" << umur << tahun ya!\" <<\n",
+        "endl;\n",
+        " return 0;\n",
+        "}"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!g++ input_data.cpp -o input_data\n",
+        "!./input_data"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0Zt-6sxr6Aej",
+        "outputId": "7025c1d0-02e6-469e-cc7a-60b7bfe8ff7a"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\u001b[01m\u001b[Kinput_data.cpp:15:79:\u001b[m\u001b[K \u001b[01;35m\u001b[Kwarning: \u001b[m\u001b[Kmissing terminating \" character\n",
+            "   15 | cout << \"\\nHalo \" << namaSiswa << \", ternyata umur kamu \" << umur << tahun ya!\u001b[01;35m\u001b[K\"\u001b[m\u001b[K <<\n",
+            "      |                                                                               \u001b[01;35m\u001b[K^\u001b[m\u001b[K\n",
+            "\u001b[01m\u001b[Kinput_data.cpp:15:79:\u001b[m\u001b[K \u001b[01;31m\u001b[Kerror: \u001b[m\u001b[Kmissing terminating \" character\n",
+            "   15 | cout << \"\\nHalo \" << namaSiswa << \", ternyata umur kamu \" << umur << tahun ya!\u001b[01;31m\u001b[K\" <<\u001b[m\u001b[K\n",
+            "      |                                                                               \u001b[01;31m\u001b[K^~~~\u001b[m\u001b[K\n",
+            "\u001b[01m\u001b[Kinput_data.cpp:\u001b[m\u001b[K In function ‘\u001b[01m\u001b[Kint\u001b[01;32m\u001b[K main\u001b[m\u001b[K()\u001b[m\u001b[K’:\n",
+            "\u001b[01m\u001b[Kinput_data.cpp:9:1:\u001b[m\u001b[K \u001b[01;31m\u001b[Kerror: \u001b[m\u001b[K‘\u001b[01m\u001b[Kcount\u001b[m\u001b[K’ was not declared in this scope\n",
+            "    9 | \u001b[01;31m\u001b[Kcount\u001b[m\u001b[K << \" Masukkan Nama (1 kata):\";\n",
+            "      | \u001b[01;31m\u001b[K^~~~~\u001b[m\u001b[K\n",
+            "\u001b[01m\u001b[Kinput_data.cpp:15:70:\u001b[m\u001b[K \u001b[01;31m\u001b[Kerror: \u001b[m\u001b[K‘\u001b[01m\u001b[Ktahun\u001b[m\u001b[K’ was not declared in this scope\n",
+            "   15 | cout << \"\\nHalo \" << namaSiswa << \", ternyata umur kamu \" << umur << \u001b[01;31m\u001b[Ktahun\u001b[m\u001b[K ya!\" <<\n",
+            "      |                                                                      \u001b[01;31m\u001b[K^~~~~\u001b[m\u001b[K\n",
+            "/bin/bash: line 1: ./input_data: No such file or directory\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
